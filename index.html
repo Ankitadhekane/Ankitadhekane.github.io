@@ -1,8 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>Portfolio</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
+* {
+  box-sizing: border-box;
+}
 .card {
   box-shadow: 0 4px 8px 0 rgba(159, 51, 51, 0.2);
   max-width: 300px;
@@ -11,11 +16,35 @@
   font-family: arial;
 }
 
-.title {
-  color: grey;
-  font-size: 18px;
+body {
+  font-family: Arial, Helvetica, sans-serif;
 }
 
+header {
+  background-color: #666;
+  padding: 1px;
+  text-align: center;
+  font-size: 15px;
+  color: white;
+}
+section {
+  display: -webkit-flex;
+  display: flex;
+}
+nav {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  background: #ccc;
+  padding: 20px;
+}
+
+article {
+ 
+  flex: 3;
+  background-color: #f1f1f1;
+  padding: 10px;
+}
 button {
   border: none;
   outline: 0;
@@ -38,25 +67,51 @@ a {
 button:hover, a:hover {
   opacity: 0.7;
 }
+
+footer {
+  background-color: #777;
+  padding: 10px;
+  text-align: center;
+  color: white;
+}
+
+}
 </style>
 </head>
 <body>
 
-<h2 style="text-align:center"></h2>
+<header>
+  <h2>Hello and welcome!</h2>
+</header>
 
-<div class="card">
-  <img src="/DSC08072.JPG" alt="Ankita Photo" style="width:100%">
-  <h1>John Doe</h1>
+<section>
+  <nav>
+   <div class="card">
+  <img src="C:\Users\Ankita\Desktop\DSC08072.JPG" alt="Ankita Photo" style="width:100%">
+  <h1>Ankita Dhekane</h1>
   <p class="title">Student and Cybersecurity Enthusiast</p>
   <p>Santa Clara University</p>
-  <div style="margin: 24px 0;">
-    <a href="#"><i class="fa fa-dribbble"></i></a> 
-    <a href="#"><i class="fa fa-twitter"></i></a>  
-    <a href="#"><i class="fa fa-linkedin"></i></a>  
-    <a href="#"><i class="fa fa-facebook"></i></a> 
-  </div>
-  <p><button>Contact</button></p>
+  <p>Livermore, CA 94550 </p>
+  <p>adhekane@scu.edu</p>
+  <p>925-596-4740</p>
+ 
+  <p><button onclick="location.href='C:\Users\Ankita\Desktop\resume.html'">RESUME</button></p>
 </div>
+  </nav>
+  
+  <article>
+    <h1>EDUCATION</h1>
+    <p>* Santa Clara University, Leavey School of Business Santa Clara, CA</p>
+    <p>Masters of Science Information System Candidate, GPA 3.82 Graduation June- 2026</p>
+	<P>* Mumbai University Mumbai, Maharashtra, India</p>
+	<p>Bachelor of Engineering in Information Technology, Graduation June- 2019</P>
+  </article>
+  
+</section>
+
+<footer>
+  <p></p>
+</footer>
 
 </body>
 </html>
